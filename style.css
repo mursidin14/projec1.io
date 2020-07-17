@@ -1,0 +1,756 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: relative;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 0 12% 0 12%;
+}
+
+.logo {
+    color: #069370;
+    font-size: bold;
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+.clearfix {
+    display: block;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #069370;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media(max-width: 900px) {
+    .menu-toggle {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        background-color: #ccc;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        color: #069370;
+        font-size: 30px;
+    }
+    .menu-toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active::before {
+        content: '\f00d';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    nav {
+        display: none;
+    }
+    nav.active {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul {
+        display: block;
+        padding-top: 30px;
+        position: absolute;
+    }
+    nav.active ul li a {
+        margin: 0px;
+    }
+}
+
+
+/* JUmbotron */
+
+.jumbotron {
+    background-color: #069370;
+    background-image: url(./Img/Masjid.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 80px 12% 0 12%;
+}
+
+.Text {
+    padding: 60px 0 0 80px;
+    line-height: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.Pragraf {
+    padding: 0.1px 0 0 80px;
+    color: white;
+    line-height: 5px;
+    font-size: small;
+}
+
+.Button {
+    padding: 50px 0 0 8%;
+}
+
+.but2 {
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.but2:hover {
+    background-color: #fff;
+    color: #069370;
+    transition: 0.5s;
+}
+
+.but1 {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.but1:hover {
+    background-color: #fff;
+    color: #069370;
+    transition: 0.5s;
+}
+
+
+/* Jumbotron */
+
+
+/* Featured */
+
+.Featured {
+    margin: 50px 12% 0 12%;
+    color: grey;
+}
+
+.Featured1 {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-size: 20px;
+    padding-top: 10px;
+    display: block;
+}
+
+.Show {
+    float: right;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #069370;
+    border-radius: 30px;
+    color: grey;
+    font-weight: 550;
+}
+
+.Show:hover {
+    background-color: #069370;
+    transition: 0.5s;
+    color: white;
+}
+
+.Cards {
+    margin: 40px 12% 0 12%;
+}
+
+.card {
+    width: 100px;
+    height: 130px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .25);
+    float: left;
+    margin: 0 3%;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .15);
+    transition: 0.3s;
+}
+
+.Crd {
+    display: block;
+    text-decoration: none;
+    padding: 5px 0px 20px 8px;
+    color: grey;
+}
+
+.bedug {
+    width: 60px;
+    height: 50px;
+    padding: 5px 0px 10px 5px;
+}
+
+.Kalender {
+    width: 40px;
+    height: 40px;
+    padding: 15px 0px 15px 5px;
+}
+
+.Crd3 {
+    display: block;
+    text-decoration: none;
+    padding: 5px 0px 20px 25px;
+    color: grey;
+}
+
+.dollar {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0px 10px 0px;
+}
+
+.Crd4 {
+    display: block;
+    text-decoration: none;
+    padding: 0px 0px 0px 20px;
+    color: grey;
+}
+
+.Masjid {
+    width: 60px;
+    height: 60px;
+    padding: 15px 0px 15px 0px;
+}
+
+.Crd5 {
+    display: block;
+    text-decoration: none;
+    padding: 0px 0px 0px 20px;
+    color: grey;
+}
+
+.Tangan {
+    width: 60px;
+    height: 60px;
+    padding: 15px 10px 0px 5px;
+}
+
+.Crd6 {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+    color: grey;
+}
+
+@media(max-width: 1079px) {
+    .card {
+        margin: 2%;
+    }
+}
+
+
+/* Featured  */
+
+
+/* Time */
+
+Time {
+    display: block;
+    clear: both;
+    background-image: url(./Img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 250px 12% 100px 12%;
+    border-radius: 20px;
+}
+
+.time {
+    padding-top: 10px;
+    color: grey;
+    margin: 0 0 0 30px;
+    display: block;
+    float: left;
+}
+
+.waktu {
+    float: left;
+    display: block;
+    padding-left: 50px;
+    line-height: 10px;
+}
+
+.G {
+    line-height: 2px;
+}
+
+.P {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.S {
+    line-height: 0.1px;
+}
+
+.tabel {
+    display: block;
+    padding: 100px 50px 0 0;
+}
+
+@media(max-width: 900px) {
+    .tabel {
+        padding: 100px 10px 0 0;
+    }
+}
+
+.tabel1 {
+    float: right;
+    display: flex;
+    color: grey;
+}
+
+.td1 {
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.td11 {
+    padding: 10px 17px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.td12 {
+    padding: 10px 24px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.td4 {
+    padding: 10px 23px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.td3 {
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.td {
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.td0 {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.td2 {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #eee;
+}
+
+.td21 {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+
+/* Time */
+
+
+/* Events2 */
+
+.Events {
+    margin: 0 12% 0 12%;
+}
+
+.Events2 {
+    display: flex;
+    float: left;
+    justify-content: space-around;
+    width: 360px;
+    height: 80px;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .15);
+    margin-bottom: 20px;
+}
+
+@media(min-width: 807px) {
+    .Events2 {
+        width: 60%;
+    }
+}
+
+.Events1 {
+    margin: 50px 30px 20px 0px;
+    width: 100%;
+}
+
+@media(min-width: 1300px) {
+    .Events1 {
+        margin: 50px 30px 20px 0px;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.Feb2 {
+    display: flex;
+}
+
+.Feb {
+    line-height: 1px;
+}
+
+.Taw {
+    line-height: 1px;
+    padding-right: 150px;
+}
+
+.View {
+    text-decoration: none;
+    border-radius: 30px;
+    color: grey;
+    padding: 7px 15px;
+    height: 18px;
+    border: 1px solid grey;
+    background-color: #ddd;
+    font-weight: 550;
+    margin-top: 13px;
+    transition: 0.5s;
+}
+
+.View:hover {
+    background-color: #069370;
+    color: white;
+}
+
+.flex {
+    padding-top: 450px;
+}
+
+@media(min-width: 1305px) {
+    .flex {
+        display: flex;
+        padding-top: 0px;
+    }
+}
+
+.Speaker {
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 310px;
+    height: 450px;
+}
+
+.speak {
+    margin: 30px 0px 20px 25px;
+}
+
+@media (max-width: 1300px) {
+    .Taw {
+        padding-right: 0px;
+    }
+    .Speaker {
+        margin-left: 0px;
+    }
+    video {
+        width: 150px;
+    }
+    .speak {
+        padding-top: 30px;
+    }
+}
+
+video {
+    border-radius: 5px;
+    width: 240px;
+}
+
+.Vid {
+    margin-left: 40px;
+    line-height: 1px;
+    color: #333;
+}
+
+
+/* Events2 */
+
+
+/* Gamabar */
+
+.Gambar {
+    margin: 80px 12% 50px 12%;
+    height: auto;
+    background-image: url(./Img/gambar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.Profile {
+    padding: 60px 50px 20px 50px;
+}
+
+.gbr {
+    margin-left: 25px;
+}
+
+.Img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.overley {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.overley:target {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+    width: auto;
+    height: auto;
+}
+
+.overley img {
+    padding: 20% 45%;
+    max-height: 100%;
+}
+
+.close {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Gambar */
+
+
+/* About */
+
+.About {
+    background-color: rgb(12, 41, 16);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 450px;
+    padding: 0;
+    margin: 60px 0 0 0;
+    text-align: center;
+}
+
+.Content {
+    padding-top: 80px;
+    color: white;
+}
+
+.h1 {
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.Praf {
+    font-size: small;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.Donatetoday {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+
+.Donatetoday:hover {
+    background-color: white;
+    color: #069370;
+    transition: 0.5s;
+}
+
+.Sub {
+    background-color: white;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, .15);
+    width: 60%;
+    margin: 100px auto;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+.As {
+    font-size: smaller;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form input {
+    border-radius: 30px;
+    padding: 8px;
+    border: 1px solid grey;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    padding: 8px 13px;
+    border-radius: 30px;
+    color: gray;
+}
+
+form button:hover {
+    background-color: #069370;
+    color: white;
+    transition: 0.5s;
+}
+
+form button:focus {
+    outline: none;
+}
+
+
+/* About */
+
+
+/* footer */
+
+footer {
+    padding: 0 80px;
+    margin-top: 250px;
+    color: grey;
+    height: 150px;
+}
+
+.col-4 {
+    line-height: 5px;
+    float: left;
+    padding-left: 15%;
+}
+
+@media (max-width: 1000px) {
+    .col-4 {
+        padding-left: 1%;
+    }
+}
+
+.col-8 {
+    margin: 20px 80px 0 0;
+    float: right;
+}
+
+@media (max-width: 1175px) {
+    footer {
+        padding: 0 50px;
+    }
+    .col-8 {
+        margin: 20px 30px 0 0;
+    }
+}
+
+.col-8 a {
+    text-decoration: none;
+    color: grey;
+}
+
+.about {
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.about li {
+    list-style: none;
+}
+
+
+/* footer */
